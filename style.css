@@ -70,11 +70,12 @@ button {
 }
 @media (max-width: 530px) {
   .card {
-    width: 80%;
+    width: 90%;
+height: 50vh ;
   }
   img {
-    width: 70%;
-    height: 100px;
+    width: 90%;
+    height: 110px;
   }
   h3,
   h2,
