@@ -29,7 +29,6 @@ body {
   text-align: center;
   box-shadow: 0 5px 10px #ccc;
   transition: 0.5s;
-  
 }
 .card:hover {
   transform: translateY(-10px);
@@ -39,7 +38,6 @@ img {
   object-fit: contain;
   border-radius: 20px;
   height: 200px;
-
 }
 
 h3 {
@@ -52,5 +50,39 @@ button {
   text-transform: capitalize;
   border: 1px solid rgb(164, 164, 244);
   cursor: pointer;
-  font-size: 15px ;
+  font-size: 15px;
+}
+@media (max-width: 1275px) {
+  .cards {
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 638px) {
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    width: fit-content;
+    margin: 10px;
+  }
+}
+@media (max-width: 530px) {
+  .card {
+    width: 80%;
+  }
+  img {
+    width: 70%;
+    height: 100px;
+  }
+  h3,
+  h2,
+  p {
+    font-size: 15px;
+  }
+  button {
+    padding: 5px 15px;
+    font-size: small;
+  }
 }
